@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_account"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/full_name"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/hint_email"
+                android:padding="10dp"
+                android:textColorHint="@color/text_hist"
+                android:background="@drawable/res1"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/login"
+                android:textColorHint="@color/text_hist"
+                android:padding="10dp"
+                android:background="@drawable/res1"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/login"
+                android:padding="10dp"
+                android:textColorHint="@color/text_hist"
+                android:background="@drawable/res1"
+                android:inputType="textEmailAddress"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phone"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/login"
+                android:padding="10dp"
+                android:textColorHint="@color/text_hist"
+                android:background="@drawable/res1"
+                android:inputType="phone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/text"
+                app:endIconMode="password_toggle"
+                android:hint="@string/hint_pas"
+                app:endIconTint="@color/text_hist">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:letterSpacing="0.2"
+                    android:background="@drawable/res1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_password"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/text_hist"
+                app:endIconMode="password_toggle"
+                android:hint="@string/hint_pas"
+                app:endIconTint="@color/text_hist">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/confPas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.2"
+                    android:inputType="textPassword"
+                    android:background="@drawable/res1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="preferences"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/preference1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textOff="Wifi"
+                        android:textOn="Wifi"
+                        android:background="@drawable/toggle_button_background"
+                        android:textColor="@drawable/toggle_text_color"
+                        android:button="@null"
+                        android:layout_marginRight="10dp"/>
+
+                    <ToggleButton
+                        android:id="@+id/preference2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textOff="Gym"
+                        android:textOn="Gym"
+                        android:background="@drawable/toggle_button_background"
+                        android:textColor="@drawable/toggle_text_color"
+                        android:button="@null"
+                        android:layout_marginRight="10dp"/>
+
+
+                    <ToggleButton
+                        android:id="@+id/preference3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/toggle_button_background"
+                        android:button="@null"
+                        android:textColor="@drawable/toggle_text_color"
+                        android:textOff="Smoking Arena"
+                        android:textOn="Smoking Arena" />
+
+                    <ToggleButton
+                        android:id="@+id/preference4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textOff="wellness"
+                        android:textOn="wellness"
+                        android:background="@drawable/toggle_button_background"
+                        android:textColor="@drawable/toggle_text_color"
+                        android:button="@null"
+                        android:layout_marginRight="10dp"/>
+
+
+                    <ToggleButton
+                        android:id="@+id/preference5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textOff="swimming pool"
+                        android:textOn="swimming pool"
+                        android:background="@drawable/toggle_button_background"
+                        android:textColor="@drawable/toggle_text_color"
+                        android:button="@null"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/type_of_housing1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textOff="house"
+                        android:textOn="house"
+                        android:background="@drawable/toggle_button_background"
+                        android:textColor="@drawable/toggle_text_color"
+                        android:button="@null"
+                        android:layout_marginRight="10dp"/>
+
+                    <ToggleButton
+                        android:id="@+id/type_of_housing2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textOff="flat"
+                        android:textOn="flat"
+                        android:background="@drawable/toggle_button_background"
+                        android:textColor="@drawable/toggle_text_color"
+                        android:button="@null"
+                        android:layout_marginRight="10dp"/>
+
+
+                    <ToggleButton
+                        android:id="@+id/type_of_housing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textOff="dormitory"
+                        android:textOn="dormitory"
+                        android:background="@drawable/toggle_button_background"
+                        android:textColor="@drawable/toggle_text_color"
+                        android:button="@null"
+                        android:layout_marginRight="10dp"/>
+
+                    <ToggleButton
+                        android:id="@+id/type_of_housing4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textOff="bungalow"
+                        android:textOn="bungalow"
+                        android:background="@drawable/toggle_button_background"
+                        android:textColor="@drawable/toggle_text_color"
+                        android:button="@null"
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            app:dividerColor="#C903A9F4"
+            android:layout_marginHorizontal="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="By continuing, you agree to\nTerms of Use and Privacy Policy."
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/purple_btn"
+            android:onClick="SignUp"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/don_t_have_signup_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/don_t_sign_up"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/signin_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/log_in"
+                android:textColor="@color/text"
+                android:backgroundTint="@android:color/transparent"
+                android:padding="8dp"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

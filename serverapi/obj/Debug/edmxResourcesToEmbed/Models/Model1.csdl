@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="hotelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Booking_status">
+    <Key>
+      <PropertyRef Name="booking_status_id" />
+    </Key>
+    <Property Name="booking_status_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="status_text" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Bookings" Relationship="Self.FK__Bookings__bookin__5070F446" FromRole="Booking_status" ToRole="Bookings" />
+  </EntityType>
+  <EntityType Name="Bookings">
+    <Key>
+      <PropertyRef Name="booking_id" />
+    </Key>
+    <Property Name="booking_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="room_id" Type="Int32" Nullable="false" />
+    <Property Name="check_in_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="check_out_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="guests_number" Type="Int32" Nullable="false" />
+    <Property Name="total_price" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="booking_status" Type="Int32" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="special_requests" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Booking_status1" Relationship="Self.FK__Bookings__bookin__5070F446" FromRole="Bookings" ToRole="Booking_status" />
+    <NavigationProperty Name="Rooms" Relationship="Self.FK__Bookings__room_i__5165187F" FromRole="Bookings" ToRole="Rooms" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Bookings__user_i__4F7CD00D" FromRole="Bookings" ToRole="Users" />
+    <NavigationProperty Name="Payments" Relationship="Self.FK__Payments__bookin__5AEE82B9" FromRole="Bookings" ToRole="Payments" />
+  </EntityType>
+  <EntityType Name="Hotels">
+    <Key>
+      <PropertyRef Name="hotel_id" />
+    </Key>
+    <Property Name="hotel_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="address" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="star_rating" Type="Double" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="preview_photo" Type="Int32" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Photos" Relationship="Self.FK__Hotels__preview___412EB0B6" FromRole="Hotels" ToRole="Photos" />
+    <NavigationProperty Name="Reviews" Relationship="Self.FK__Reviews__hotel_i__571DF1D5" FromRole="Hotels" ToRole="Reviews" />
+    <NavigationProperty Name="Rooms" Relationship="Self.FK__Rooms__hotel_id__45F365D3" FromRole="Hotels" ToRole="Rooms" />
+  </EntityType>
+  <EntityType Name="Manager_request">
+    <Key>
+      <PropertyRef Name="request_id" />
+    </Key>
+    <Property Name="request_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="photo_doc" Type="Int32" />
+    <Property Name="request_text" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="user_id" Type="Int32" />
+    <NavigationProperty Name="Photos" Relationship="Self.FK__Manager_r__photo__5EBF139D" FromRole="Manager_request" ToRole="Photos" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Manager_r__user___5FB337D6" FromRole="Manager_request" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Payment_status">
+    <Key>
+      <PropertyRef Name="payment_status_id" />
+    </Key>
+    <Property Name="payment_status_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="status_text" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Payments" Relationship="Self.FK__Payments__paymen__5BE2A6F2" FromRole="Payment_status" ToRole="Payments" />
+  </EntityType>
+  <EntityType Name="Payments">
+    <Key>
+      <PropertyRef Name="payment_id" />
+    </Key>
+    <Property Name="payment_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="booking_id" Type="Int32" Nullable="false" />
+    <Property Name="amount" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="payment_method" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="payment_status" Type="Int32" />
+    <Property Name="payment_date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Bookings" Relationship="Self.FK__Payments__bookin__5AEE82B9" FromRole="Payments" ToRole="Bookings" />
+    <NavigationProperty Name="Payment_status1" Relationship="Self.FK__Payments__paymen__5BE2A6F2" FromRole="Payments" ToRole="Payment_status" />
+  </EntityType>
+  <EntityType Name="Photos">
+    <Key>
+      <PropertyRef Name="photo_id" />
+    </Key>
+    <Property Name="photo_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="photo_data" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Hotels" Relationship="Self.FK__Hotels__preview___412EB0B6" FromRole="Photos" ToRole="Hotels" />
+    <NavigationProperty Name="Manager_request" Relationship="Self.FK__Manager_r__photo__5EBF139D" FromRole="Photos" ToRole="Manager_request" />
+    <NavigationProperty Name="Rooms" Relationship="Self.FK__Rooms__room_prev__46E78A0C" FromRole="Photos" ToRole="Rooms" />
+  </EntityType>
+  <EntityType Name="Reviews">
+    <Key>
+      <PropertyRef Name="review_id" />
+    </Key>
+    <Property Name="review_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="hotel_id" Type="Int32" Nullable="false" />
+    <Property Name="rating" Type="Int32" />
+    <Property Name="review_text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="review_date" Type="DateTime" Precision="3" />
+    <Property Name="hotel_response" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Hotels" Relationship="Self.FK__Reviews__hotel_i__571DF1D5" FromRole="Reviews" ToRole="Hotels" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Reviews__user_id__5629CD9C" FromRole="Reviews" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="role_id" />
+    </Key>
+    <Property Name="role_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="role_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__registrat__3D5E1FD2" FromRole="Roles" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Rooms">
+    <Key>
+      <PropertyRef Name="room_id" />
+    </Key>
+    <Property Name="room_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="hotel_id" Type="Int32" Nullable="false" />
+    <Property Name="type_id" Type="Int32" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="capacity" Type="Int32" Nullable="false" />
+    <Property Name="quantity_available" Type="Int32" Nullable="false" />
+    <Property Name="price_per_night" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="size" Type="Int32" />
+    <Property Name="room_preview" Type="Int32" />
+    <NavigationProperty Name="Bookings" Relationship="Self.FK__Bookings__room_i__5165187F" FromRole="Rooms" ToRole="Bookings" />
+    <NavigationProperty Name="Hotels" Relationship="Self.FK__Rooms__hotel_id__45F365D3" FromRole="Rooms" ToRole="Hotels" />
+    <NavigationProperty Name="Photos" Relationship="Self.FK__Rooms__room_prev__46E78A0C" FromRole="Rooms" ToRole="Photos" />
+    <NavigationProperty Name="RoomTypes" Relationship="Self.FK__Rooms__type_id__47DBAE45" FromRole="Rooms" ToRole="RoomTypes" />
+  </EntityType>
+  <EntityType Name="RoomTypes">
+    <Key>
+      <PropertyRef Name="type_id" />
+    </Key>
+    <Property Name="type_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Rooms" Relationship="Self.FK__Rooms__type_id__47DBAE45" FromRole="RoomTypes" ToRole="Rooms" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fio" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="password_hash" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="role_id" Type="Int32" />
+    <Property Name="registration_date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Bookings" Relationship="Self.FK__Bookings__user_i__4F7CD00D" FromRole="Users" ToRole="Bookings" />
+    <NavigationProperty Name="Manager_request" Relationship="Self.FK__Manager_r__user___5FB337D6" FromRole="Users" ToRole="Manager_request" />
+    <NavigationProperty Name="Reviews" Relationship="Self.FK__Reviews__user_id__5629CD9C" FromRole="Users" ToRole="Reviews" />
+    <NavigationProperty Name="Roles" Relationship="Self.FK__Users__registrat__3D5E1FD2" FromRole="Users" ToRole="Roles" />
+  </EntityType>
+  <EntityType Name="v_Active_Bookings">
+    <Key>
+      <PropertyRef Name="booking_id" />
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="user_fio" />
+      <PropertyRef Name="room_id" />
+      <PropertyRef Name="check_in_date" />
+      <PropertyRef Name="check_out_date" />
+      <PropertyRef Name="guests_number" />
+      <PropertyRef Name="total_price" />
+    </Key>
+    <Property Name="booking_id" Type="Int32" Nullable="false" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="user_fio" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="room_id" Type="Int32" Nullable="false" />
+    <Property Name="room_description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="check_in_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="check_out_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="guests_number" Type="Int32" Nullable="false" />
+    <Property Name="total_price" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="v_Bookings_Details">
+    <Key>
+      <PropertyRef Name="booking_id" />
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="user_fio" />
+      <PropertyRef Name="room_id" />
+      <PropertyRef Name="check_in_date" />
+      <PropertyRef Name="check_out_date" />
+      <PropertyRef Name="guests_number" />
+      <PropertyRef Name="total_price" />
+      <PropertyRef Name="booking_status" />
+    </Key>
+    <Property Name="booking_id" Type="Int32" Nullable="false" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="user_fio" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="room_id" Type="Int32" Nullable="false" />
+    <Property Name="room_description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="check_in_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="check_out_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="guests_number" Type="Int32" Nullable="false" />
+    <Property Name="total_price" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="booking_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="payment_id" Type="Int32" />
+    <Property Name="payment_amount" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="payment_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="v_Hotel_Reviews">
+    <Key>
+      <PropertyRef Name="hotel_id" />
+      <PropertyRef Name="hotel_name" />
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="user_fio" />
+      <PropertyRef Name="review_id" />
+    </Key>
+    <Property Name="hotel_id" Type="Int32" Nullable="false" />
+    <Property Name="hotel_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="user_fio" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="review_id" Type="Int32" Nullable="false" />
+    <Property Name="rating" Type="Int32" />
+    <Property Name="review_text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="hotel_response" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="review_date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="v_Hotels_with_Photos">
+    <Key>
+      <PropertyRef Name="hotel_id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="address" />
+      <PropertyRef Name="city" />
+      <PropertyRef Name="country" />
+    </Key>
+    <Property Name="hotel_id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="star_rating" Type="Double" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="hotel_photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="v_Manager_Requests">
+    <Key>
+      <PropertyRef Name="request_id" />
+      <PropertyRef Name="user_id" />
+      <PropertyRef Name="user_fio" />
+    </Key>
+    <Property Name="request_id" Type="Int32" Nullable="false" />
+    <Property Name="user_id" Type="Int32" Nullable="false" />
+    <Property Name="user_fio" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="doc_photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="request_text" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="v_Rooms_Details">
+    <Key>
+      <PropertyRef Name="room_id" />
+      <PropertyRef Name="hotel_id" />
+      <PropertyRef Name="room_type_name" />
+      <PropertyRef Name="capacity" />
+      <PropertyRef Name="quantity_available" />
+      <PropertyRef Name="price_per_night" />
+    </Key>
+    <Property Name="room_id" Type="Int32" Nullable="false" />
+    <Property Name="hotel_id" Type="Int32" Nullable="false" />
+    <Property Name="room_type_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="capacity" Type="Int32" Nullable="false" />
+    <Property Name="quantity_available" Type="Int32" Nullable="false" />
+    <Property Name="price_per_night" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="size" Type="Int32" />
+    <Property Name="room_photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK__Bookings__bookin__5070F446">
+    <End Role="Booking_status" Type="Self.Booking_status" Multiplicity="0..1" />
+    <End Role="Bookings" Type="Self.Bookings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Booking_status">
+        <PropertyRef Name="booking_status_id" />
+      </Principal>
+      <Dependent Role="Bookings">
+        <PropertyRef Name="booking_status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Bookings__room_i__5165187F">
+    <End Role="Rooms" Type="Self.Rooms" Multiplicity="1" />
+    <End Role="Bookings" Type="Self.Bookings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rooms">
+        <PropertyRef Name="room_id" />
+      </Principal>
+      <Dependent Role="Bookings">
+        <PropertyRef Name="room_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Bookings__user_i__4F7CD00D">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Bookings" Type="Self.Bookings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="Bookings">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Payments__bookin__5AEE82B9">
+    <End Role="Bookings" Type="Self.Bookings" Multiplicity="1" />
+    <End Role="Payments" Type="Self.Payments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bookings">
+        <PropertyRef Name="booking_id" />
+      </Principal>
+      <Dependent Role="Payments">
+        <PropertyRef Name="booking_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Hotels__preview___412EB0B6">
+    <End Role="Photos" Type="Self.Photos" Multiplicity="0..1" />
+    <End Role="Hotels" Type="Self.Hotels" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Photos">
+        <PropertyRef Name="photo_id" />
+      </Principal>
+      <Dependent Role="Hotels">
+        <PropertyRef Name="preview_photo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reviews__hotel_i__571DF1D5">
+    <End Role="Hotels" Type="Self.Hotels" Multiplicity="1" />
+    <End Role="Reviews" Type="Self.Reviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotels">
+        <PropertyRef Name="hotel_id" />
+      </Principal>
+      <Dependent Role="Reviews">
+        <PropertyRef Name="hotel_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rooms__hotel_id__45F365D3">
+    <End Role="Hotels" Type="Self.Hotels" Multiplicity="1" />
+    <End Role="Rooms" Type="Self.Rooms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotels">
+        <PropertyRef Name="hotel_id" />
+      </Principal>
+      <Dependent Role="Rooms">
+        <PropertyRef Name="hotel_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Manager_r__photo__5EBF139D">
+    <End Role="Photos" Type="Self.Photos" Multiplicity="0..1" />
+    <End Role="Manager_request" Type="Self.Manager_request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Photos">
+        <PropertyRef Name="photo_id" />
+      </Principal>
+      <Dependent Role="Manager_request">
+        <PropertyRef Name="photo_doc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Manager_r__user___5FB337D6">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Manager_request" Type="Self.Manager_request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="Manager_request">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Payments__paymen__5BE2A6F2">
+    <End Role="Payment_status" Type="Self.Payment_status" Multiplicity="0..1" />
+    <End Role="Payments" Type="Self.Payments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payment_status">
+        <PropertyRef Name="payment_status_id" />
+      </Principal>
+      <Dependent Role="Payments">
+        <PropertyRef Name="payment_status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rooms__room_prev__46E78A0C">
+    <End Role="Photos" Type="Self.Photos" Multiplicity="0..1" />
+    <End Role="Rooms" Type="Self.Rooms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Photos">
+        <PropertyRef Name="photo_id" />
+      </Principal>
+      <Dependent Role="Rooms">
+        <PropertyRef Name="room_preview" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reviews__user_id__5629CD9C">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Reviews" Type="Self.Reviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="Reviews">
+        <PropertyRef Name="user_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__registrat__3D5E1FD2">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="role_id" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="role_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rooms__type_id__47DBAE45">
+    <End Role="RoomTypes" Type="Self.RoomTypes" Multiplicity="1" />
+    <End Role="Rooms" Type="Self.Rooms" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RoomTypes">
+        <PropertyRef Name="type_id" />
+      </Principal>
+      <Dependent Role="Rooms">
+        <PropertyRef Name="type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="hotelEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Booking_status" EntityType="Self.Booking_status" />
+    <EntitySet Name="Bookings" EntityType="Self.Bookings" />
+    <EntitySet Name="Hotels" EntityType="Self.Hotels" />
+    <EntitySet Name="Manager_request" EntityType="Self.Manager_request" />
+    <EntitySet Name="Payment_status" EntityType="Self.Payment_status" />
+    <EntitySet Name="Payments" EntityType="Self.Payments" />
+    <EntitySet Name="Photos" EntityType="Self.Photos" />
+    <EntitySet Name="Reviews" EntityType="Self.Reviews" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" />
+    <EntitySet Name="Rooms" EntityType="Self.Rooms" />
+    <EntitySet Name="RoomTypes" EntityType="Self.RoomTypes" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <EntitySet Name="v_Active_Bookings" EntityType="Self.v_Active_Bookings" />
+    <EntitySet Name="v_Bookings_Details" EntityType="Self.v_Bookings_Details" />
+    <EntitySet Name="v_Hotel_Reviews" EntityType="Self.v_Hotel_Reviews" />
+    <EntitySet Name="v_Hotels_with_Photos" EntityType="Self.v_Hotels_with_Photos" />
+    <EntitySet Name="v_Manager_Requests" EntityType="Self.v_Manager_Requests" />
+    <EntitySet Name="v_Rooms_Details" EntityType="Self.v_Rooms_Details" />
+    <AssociationSet Name="FK__Bookings__bookin__5070F446" Association="Self.FK__Bookings__bookin__5070F446">
+      <End Role="Booking_status" EntitySet="Booking_status" />
+      <End Role="Bookings" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Bookings__room_i__5165187F" Association="Self.FK__Bookings__room_i__5165187F">
+      <End Role="Rooms" EntitySet="Rooms" />
+      <End Role="Bookings" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Bookings__user_i__4F7CD00D" Association="Self.FK__Bookings__user_i__4F7CD00D">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Bookings" EntitySet="Bookings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Payments__bookin__5AEE82B9" Association="Self.FK__Payments__bookin__5AEE82B9">
+      <End Role="Bookings" EntitySet="Bookings" />
+      <End Role="Payments" EntitySet="Payments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Hotels__preview___412EB0B6" Association="Self.FK__Hotels__preview___412EB0B6">
+      <End Role="Photos" EntitySet="Photos" />
+      <End Role="Hotels" EntitySet="Hotels" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reviews__hotel_i__571DF1D5" Association="Self.FK__Reviews__hotel_i__571DF1D5">
+      <End Role="Hotels" EntitySet="Hotels" />
+      <End Role="Reviews" EntitySet="Reviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rooms__hotel_id__45F365D3" Association="Self.FK__Rooms__hotel_id__45F365D3">
+      <End Role="Hotels" EntitySet="Hotels" />
+      <End Role="Rooms" EntitySet="Rooms" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Manager_r__photo__5EBF139D" Association="Self.FK__Manager_r__photo__5EBF139D">
+      <End Role="Photos" EntitySet="Photos" />
+      <End Role="Manager_request" EntitySet="Manager_request" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Manager_r__user___5FB337D6" Association="Self.FK__Manager_r__user___5FB337D6">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Manager_request" EntitySet="Manager_request" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Payments__paymen__5BE2A6F2" Association="Self.FK__Payments__paymen__5BE2A6F2">
+      <End Role="Payment_status" EntitySet="Payment_status" />
+      <End Role="Payments" EntitySet="Payments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rooms__room_prev__46E78A0C" Association="Self.FK__Rooms__room_prev__46E78A0C">
+      <End Role="Photos" EntitySet="Photos" />
+      <End Role="Rooms" EntitySet="Rooms" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reviews__user_id__5629CD9C" Association="Self.FK__Reviews__user_id__5629CD9C">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Reviews" EntitySet="Reviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__registrat__3D5E1FD2" Association="Self.FK__Users__registrat__3D5E1FD2">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rooms__type_id__47DBAE45" Association="Self.FK__Rooms__type_id__47DBAE45">
+      <End Role="RoomTypes" EntitySet="RoomTypes" />
+      <End Role="Rooms" EntitySet="Rooms" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,435 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\project\\Study\\serverapi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|d:\\project\\study\\serverapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\v_rooms_detailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\v_rooms_detailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\v_bookings_detailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\v_bookings_detailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\booking_statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\booking_statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\hotelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\hotelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|serverapi||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\v_hotels_with_photoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\v_hotels_with_photoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\v_hotel_reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\v_hotel_reviewscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\v_manager_requestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\v_manager_requestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\payment_statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\payment_statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\roomtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\roomtypescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\photoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\photoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\app_start\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:app_start\\swaggerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\manager_requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\manager_requestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|D:\\project\\Study\\serverapi\\controllers\\v_active_bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510E1526-A96C-4201-BDBC-B7F9A33245B0}|serverapi.csproj|solutionrelative:controllers\\v_active_bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingsController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "Controllers\\BookingsController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAUwCcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:03:30.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoomsController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "Controllers\\RoomsController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:08:07.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "v_Bookings_DetailsController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\v_Bookings_DetailsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v_Bookings_DetailsController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\v_Bookings_DetailsController.cs",
+              "RelativeToolTip": "Controllers\\v_Bookings_DetailsController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAwBsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:09:55.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Booking_statusController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\Booking_statusController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Booking_statusController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\Booking_statusController.cs",
+              "RelativeToolTip": "Controllers\\Booking_statusController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:03:16.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "v_Hotels_with_PhotosController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\v_Hotels_with_PhotosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v_Hotels_with_PhotosController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\v_Hotels_with_PhotosController.cs",
+              "RelativeToolTip": "Controllers\\v_Hotels_with_PhotosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:10:31.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowE8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:09:15.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HotelsController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\HotelsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HotelsController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\HotelsController.cs",
+              "RelativeToolTip": "Controllers\\HotelsController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwCwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:03:47.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "v_Rooms_DetailsController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\v_Rooms_DetailsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v_Rooms_DetailsController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\v_Rooms_DetailsController.cs",
+              "RelativeToolTip": "Controllers\\v_Rooms_DetailsController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvyAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:11:00.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T05:32:50.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "serverapi",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\serverapi.csproj",
+              "RelativeDocumentMoniker": "serverapi.csproj",
+              "ToolTip": "D:\\project\\Study\\serverapi\\serverapi.csproj",
+              "RelativeToolTip": "serverapi.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-01T12:44:34.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ReviewsController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\ReviewsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReviewsController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\ReviewsController.cs",
+              "RelativeToolTip": "Controllers\\ReviewsController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAYwEwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:07:33.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "v_Hotel_ReviewsController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\v_Hotel_ReviewsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v_Hotel_ReviewsController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\v_Hotel_ReviewsController.cs",
+              "RelativeToolTip": "Controllers\\v_Hotel_ReviewsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:10:14.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Manager_requestController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\Manager_requestController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Manager_requestController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\Manager_requestController.cs",
+              "RelativeToolTip": "Controllers\\Manager_requestController.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAkwHgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:04:14.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SwaggerConfig.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\App_Start\\SwaggerConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\SwaggerConfig.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\App_Start\\SwaggerConfig.cs",
+              "RelativeToolTip": "App_Start\\SwaggerConfig.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA6wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T02:47:31.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "v_Manager_RequestsController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\v_Manager_RequestsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v_Manager_RequestsController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\v_Manager_RequestsController.cs",
+              "RelativeToolTip": "Controllers\\v_Manager_RequestsController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAowCkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:10:47.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PaymentsController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "Controllers\\PaymentsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:06:57.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Payment_statusController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\Payment_statusController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Payment_statusController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\Payment_statusController.cs",
+              "RelativeToolTip": "Controllers\\Payment_statusController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwCgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:06:39.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RoomTypesController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\RoomTypesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoomTypesController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\RoomTypesController.cs",
+              "RelativeToolTip": "Controllers\\RoomTypesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:08:25.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PhotosController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\PhotosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PhotosController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\PhotosController.cs",
+              "RelativeToolTip": "Controllers\\PhotosController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:07:15.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Global.asax.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Global.asax.cs",
+              "RelativeToolTip": "Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T02:19:19.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\BundleConfig.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T02:11:23.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\FilterConfig.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "App_Start\\FilterConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T02:11:27.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\RouteConfig.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T02:11:28.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\WebApiConfig.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:12:11.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "Controllers\\RolesController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAYwFQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:07:50.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "v_Active_BookingsController.cs",
+              "DocumentMoniker": "D:\\project\\Study\\serverapi\\Controllers\\v_Active_BookingsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v_Active_BookingsController.cs",
+              "ToolTip": "D:\\project\\Study\\serverapi\\Controllers\\v_Active_BookingsController.cs",
+              "RelativeToolTip": "Controllers\\v_Active_BookingsController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T10:09:41.375Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

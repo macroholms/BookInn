@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Header with back button and hotel name -->
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"
+            android:background="@color/white"
+            android:contentDescription="Back button"/>
+
+        <TextView
+            android:id="@+id/text_hotel_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Estabeez Hotel"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <!-- Рейтинг -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/rating_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <ToggleButton
+                android:id="@+id/rating_5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textOff="5"
+                android:textOn="5"
+                android:drawableLeft="@drawable/star"
+                android:background="@drawable/toggle_button_background"
+                android:textColor="@drawable/toggle_text_color"
+                android:button="@null"
+                android:onClick="chekSwitch"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginRight="10dp"/>
+
+            <ToggleButton
+                android:id="@+id/rating_4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textOff="4"
+                android:onClick="chekSwitch"
+                android:textOn="4"
+                android:drawableLeft="@drawable/star"
+                android:background="@drawable/toggle_button_background"
+                android:textColor="@drawable/toggle_text_color"
+                android:button="@null"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginRight="10dp"/>
+
+            <ToggleButton
+                android:id="@+id/rating_3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:onClick="chekSwitch"
+                android:textOff="3"
+                android:textOn="3"
+                android:drawableLeft="@drawable/star"
+                android:background="@drawable/toggle_button_background"
+                android:textColor="@drawable/toggle_text_color"
+                android:button="@null"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginRight="10dp"/>
+
+            <ToggleButton
+                android:id="@+id/rating_2"
+                android:layout_width="wrap_content"
+                android:onClick="chekSwitch"
+                android:layout_height="40dp"
+                android:textOff="2"
+                android:textOn="2"
+                android:drawableLeft="@drawable/star"
+                android:background="@drawable/toggle_button_background"
+                android:textColor="@drawable/toggle_text_color"
+                android:button="@null"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginRight="10dp"/>
+
+            <ToggleButton
+                android:id="@+id/rating_1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textOff="1"
+                android:textOn="1"
+                android:drawableLeft="@drawable/star"
+                android:background="@drawable/toggle_button_background"
+                android:onClick="chekSwitch"
+                android:textColor="@drawable/toggle_text_color"
+                android:button="@null"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Текстовое поле для комментария -->
+    <EditText
+        android:id="@+id/comment_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Напишите ваш отзыв..."
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:lines="5"
+        android:minHeight="100dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"/>
+
+    <!-- Кнопка "Сохранить комментарий" -->
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/save_comment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить комментарий"
+        android:backgroundTint="@color/purple_btn"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

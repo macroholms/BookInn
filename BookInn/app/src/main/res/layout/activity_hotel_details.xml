@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <!-- Header with back button and hotel name -->
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"
+            android:background="@color/white"
+            android:contentDescription="Back button"/>
+
+        <TextView
+            android:id="@+id/text_hotel_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Estabeez Hotel"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <!-- Hotel main image -->
+    <ImageView
+        android:id="@+id/image_hotel_main"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/l"
+        android:contentDescription="Hotel image"/>
+
+    <!-- Hotel description -->
+    <TextView
+        android:id="@+id/text_hotel_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Luxury hotel located in the heart of the city"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <!-- Reviews section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/button_see_reviews1"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="225dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="See all"
+            android:textColor="@color/purple_btn"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Rooms list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_rooms"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+</LinearLayout>

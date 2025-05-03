@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/res2">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editText_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:layout_marginTop="15dp"
+        android:padding="8dp"
+        android:background="@drawable/res5" />
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Star Rating"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/toggleButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textOff="5"
+                android:textOn="5"
+                android:background="@drawable/toggle_button_background"
+                android:textColor="@drawable/toggle_text_color"
+                android:button="@null"
+                android:drawableLeft="@drawable/star"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginRight="10dp"/>
+
+            <ToggleButton
+                android:id="@+id/toggleButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textOff="4"
+                android:textOn="4"
+                android:drawableLeft="@drawable/star"
+                android:background="@drawable/toggle_button_background"
+                android:textColor="@drawable/toggle_text_color"
+                android:button="@null"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <ToggleButton
+                android:id="@+id/toggleButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textOff="3"
+                android:textOn="3"
+                android:drawableLeft="@drawable/star"
+                android:background="@drawable/toggle_button_background"
+                android:textColor="@drawable/toggle_text_color"
+                android:button="@null"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginRight="10dp"/>
+
+            <ToggleButton
+                android:id="@+id/toggleButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textOff="2"
+                android:textOn="2"
+                android:drawableLeft="@drawable/star"
+                android:background="@drawable/toggle_button_background"
+                android:textColor="@drawable/toggle_text_color"
+                android:button="@null"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <ToggleButton
+                android:id="@+id/toggleButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textOff="1"
+                android:textOn="1"
+                android:drawableLeft="@drawable/star"
+                android:background="@drawable/toggle_button_background"
+                android:textColor="@drawable/toggle_text_color"
+                android:button="@null"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faciities"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/preference1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="Wifi"
+                android:padding="6dp"
+                android:textOn="Wifi"
+                android:background="@drawable/toggle_button_background"
+                android:textColor="@drawable/toggle_text_color"
+                android:button="@null"
+                android:layout_marginRight="10dp"/>
+
+            <ToggleButton
+                android:id="@+id/preference2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:textOff="Gym"
+                android:textOn="Gym"
+                android:background="@drawable/toggle_button_background"
+                android:textColor="@drawable/toggle_text_color"
+                android:button="@null"
+                android:layout_marginRight="10dp"/>
+
+
+            <ToggleButton
+                android:id="@+id/preference3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:padding="6dp"
+                android:background="@drawable/toggle_button_background"
+                android:button="@null"
+                android:textColor="@drawable/toggle_text_color"
+                android:textOff="Smoking Arena"
+                android:textOn="Smoking Arena" />
+
+            <ToggleButton
+                android:id="@+id/preference4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="wellness"
+                android:textOn="wellness"
+                android:padding="6dp"
+                android:background="@drawable/toggle_button_background"
+                android:textColor="@drawable/toggle_text_color"
+                android:button="@null"
+                android:layout_marginRight="10dp"/>
+
+
+            <ToggleButton
+                android:id="@+id/preference5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="swimming pool"
+                android:textOn="swimming pool"
+                android:padding="6dp"
+                android:background="@drawable/toggle_button_background"
+                android:textColor="@drawable/toggle_text_color"
+                android:button="@null"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+
+        app:layout_anchor="@id/content"
+        app:layout_anchorGravity="bottom|center">
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset"
+            android:backgroundTint="@color/purple_btn"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/button_apply_filter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Apply Filter"
+            android:backgroundTint="@color/purple_btn"
+            android:textColor="#FFFFFF"
+            android:padding="12dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- ViewPager2 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <!-- Нижний LinearLayout с точками и кнопкой Next -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:layout_marginBottom="15dp"> <!-- фиксированный фон -->
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dotsIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:dotsColor="#96A3E9"
+            app:dotsStrokeWidth="2dp"
+            app:dotsSize="12dp"
+            app:dotsSpacing="8dp"
+            app:selectedDotColor="#6863FF"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:backgroundTint="@color/purple_btn"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!-- Кнопка Skip - ВСЕГДА ПОСЛЕ других элементов -->
+    <Button
+        android:id="@+id/skip"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_gravity="end|top"
+        android:layout_margin="20dp"
+        android:focusable="true"
+        android:clickable="true"
+        />
+</FrameLayout>
